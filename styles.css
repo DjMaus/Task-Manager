@@ -157,7 +157,7 @@ li {
 #progress-container {
     width: 100%;
     height: 20px;
-    background-color: #e0e0e0;
+    background-color: #f3f3f3;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 10px;
@@ -169,11 +169,13 @@ li {
     width: 0; /* Initial width */
     background-color: #4caf50;
     transition: width 0.3s ease-in-out;
+
 }
 
 #progress-text {
-    font-size: 1.2em;
+    font-size: 14px;
     color: #333;
+    margin-bottom: 10px;
 }
 
 
@@ -226,3 +228,21 @@ footer {
 footer p {
     margin: 0;
 }
+
+/* Task Number Styling */
+.task-number {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Dragged Task Effect */
+#task-list li {
+    cursor: grab;
+    transition: opacity 0.3s ease;
+}
+
+#task-list li:active {
+    cursor: grabbing;
+    opacity: 0.7;
+}
+

@@ -3,41 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Manager</title>
+    <title>Motivational Quotes & Task Manager</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-    <h1>Eat Sleep Repeat</h1>
-</header>
-<main>
-    <h2>Task List</h2>
-        <span></span>
+<div id="quote-section">
+    <h1>Motivational Quote</h1>
+    <p id="quote-display">Click the button to get a motivational quote!</p>
+    <button id="fetch-quote">Get Quote</button>
+    <script src="quoteModule.js"></script>
+</div>
+
+<hr>
+
+<div id="task-section">
+    <h1>Task Manager</h1>
     <form id="task-form">
-        <label for="task-input"></label><input type="text" id="task-input" placeholder="Enter a new task" required>
+        <input type="text" id="task-input" placeholder="Enter a new task">
         <button type="submit">Add Task</button>
     </form>
-
     <ul id="task-list"></ul>
-    <button id="clear-tasks">Clear Tasks</button>
-    <section id="progress-section">
-        <h2>Tasks Complete</h2>
-        <div id="progress-container">
-            <div id="progress-bar"></div>
-        </div>
-        <p id="progress-text">0% Complete</p>
-    </section>
-    <section id="get-inspired">
-        <h2>Need Some Motivation?</h2>
-        <p id="quote-display">Click the button to get a motivational quote!</p>
-        <button id="fetch-quote">Get Inspired</button>
-    </section>
-
-
-</main>
-<footer>
-    <p>© 2024 Task Manager</p>
-</footer>
-<script src="scripts.js"></script>
+    <div id="progress-container">
+        <div id="progress-bar"></div>
+        <span id="progress-text">0% Complete</span>
+    </div>
+    <script src="taskManager.js"></script>
+</div>
 </body>
 </html>
